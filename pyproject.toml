@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "testing-managment"
+version = "0.1.0"
+description = "testing a workflow"
+authors = ["Dan Nelson <danelson@nwi.net>"]
+license = "MIT License"
+readme = "README.md"
+packages = [{include = "testing_managment"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
